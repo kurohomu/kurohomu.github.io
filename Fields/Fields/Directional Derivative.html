@@ -1,0 +1,68 @@
+<!DOCTYPE html><html class="appearance-auto" lang="en"><head><meta charset="UTF-8"><title>Kurohomu's blog</title><meta name="description" content="Nothing special, but so special"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.ico"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><meta name="generator" content="Hexo 5.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="John Doe's blog" type="application/atom+xml">
+</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">Kurohomu's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></header><main><article id="page"><h1></h1><h1 id="Directional-Derivative"><a href="#Directional-Derivative" class="headerlink" title="Directional Derivative"></a>Directional Derivative</h1><p>The [[Fields/Fields/Gradient | gradient]] is a vector that describe the rapid decreasing directional of the field. However, we consider all direction of field. <strong>Directional derivative</strong> is the way to find the derivative of particular direction. </p>
+<blockquote>
+<p>#Definition<br>If $f(x, y, z)$ has continuous partial derivatives at the point $P_{0}\left(x_{0}, y_{0}, z_{0}\right)$ and $\hat{\mathbf{u}}$ is a unit vector, then the derivative of $f$ at $P_{0}$ in the direction of $\hat{\mathbf{u}}$ is the number$$<br>\left.\left(D_{\hat{\mathbf{u}}} f\right)\right|<em>{P</em>{0}}=\left.(\nabla f)\right|<em>{P</em>{0}} \cdot \hat{\mathbf{u}}$$<br>which is the scalar product of the gradient of $f$ at the point $P_{0}$ and the unit vector $\hat{\mathbf{u}}$.</p>
+</blockquote>
+<ul>
+<li>Element: Field, gradient, unit vector, point</li>
+<li>The point we interest must has continuous partial derivatives</li>
+<li>Pay attention to the notation</li>
+</ul>
+<p>It is a general way to find the change rate of field. The gradient is only a special case of this. </p>
+<h6 id="Proof"><a href="#Proof" class="headerlink" title="Proof."></a>Proof.</h6><p>We seek the derivative of directional. Hence, a fix point and a directional point would be need.</p>
+<ol>
+<li>Set $P_0, P, u, s$</li>
+<li>Find representation of line $L$ with $s$</li>
+<li>Use chain rule to solve derivative<h2 id="Property"><a href="#Property" class="headerlink" title="Property"></a>Property</h2>Since the directional derivative is the dot product, many properties following:</li>
+</ol>
+<blockquote>
+<p>#Property </p>
+<ol>
+<li>If $\nabla f\left(x_{0}, y_{0}, z_{0}\right)=\mathbf{0}$, then all the directional derivatives of $f$ at the point $\left(x_{0}, y_{0}, z_{0}\right)$ are zero.</li>
+</ol>
+</blockquote>
+<p>Direct from formula. The case of all zero. It mean that the derivatives never change whatever the direction change. </p>
+<blockquote>
+<ol start="2">
+<li>If $\nabla f\left(x_{0}, y_{0}, z_{0}\right) \neq \mathbf{0}$, then as the direction of $\hat{\mathbf{u}}$ changes, the directional derivative $\nabla f\left(x_{0}, y_{0}, z_{0}\right) \cdot \hat{\mathbf{u}}$ changes. Of all the possible directional derivatives of $f$ at $P_{0}$, it has its maximum value when $\hat{\mathbf{u}}$ is in the direction of $\nabla f\left(x_{0}, y_{0}, z_{0}\right)$, i.e. when $\theta=0$, meaning $\cos \theta=1$. This is consequence of the fact that the maximum value of $\cos \theta$ is 1.<br>When $\theta=0$, the value of that directional derivative is given by$$\left.\left(D_{\hat{\mathrm{u}}} f\right)\right|<em>{\left(x</em>{0}, y_{0}, z_{0}\right)}=\left|\nabla f\left(x_{0}, y_{0}, z_{0}\right)\right| \cos (0)=\left|\nabla f\left(x_{0}, y_{0}, z_{0}\right)\right|$$<br>We say that $f$ increases most rapidly in the direction of $\nabla f$.</li>
+</ol>
+</blockquote>
+<p>Relate with gradient: the direction of maximum is the gradient Since the dot product: $cos\theta$ have the maximum 1 and unit vector have the normal 1. Hence the directional derivative is less than gradient. </p>
+<blockquote>
+<ol start="3">
+<li>If $\nabla f\left(x_{0}, y_{0}, z_{0}\right) \neq \mathbf{0}$ and $\left.\nabla f\right|<em>{P</em>{0}}$ is in the direction of $\hat{\mathbf{u}}$, then$$<br>\hat{\mathbf{u}}=\frac{\nabla f\left(x_{0}, y_{0}, z_{0}\right)}{\left|\nabla f\left(x_{0}, y_{0}, z_{0}\right)\right|}$$Therefore$$<br>\begin{aligned}<br>\left.\left(D_{\hat{\mathbf{u}}} f\right)\right|<em>{\left(x</em>{0}, y_{0}, z_{0}\right)} &amp;=\frac{\nabla f\left(x_{0}, y_{0}, z_{0}\right)}{\left|\nabla f\left(x_{0}, y_{0}, z_{0}\right)\right|} \cdot \nabla f\left(x_{0}, y_{0}, z_{0}\right) \<br>&amp;=\frac{\left|\nabla f\left(x_{0}, y_{0}, z_{0}\right)\right|^{2}}{\left|\nabla f\left(x_{0}, y_{0}, z_{0}\right)\right|}=\left|\nabla f\left(x_{0}, y_{0}, z_{0}\right)\right|<br>\end{aligned}$$</li>
+</ol>
+</blockquote>
+<p>Prove that the directional derivative with direction gradient is the normal of gradient without using the geometric property of dot product. </p>
+<blockquote>
+<ol start="4">
+<li>If $\nabla f\left(x_{0}, y_{0}, z_{0}\right) \neq \mathbf{0}$, then among all the possible directional derivatives of $f$ at the point $\left(x_{0}, y_{0}, z_{0}\right)$, the derivative in the direction opposite to that of $\nabla f\left(x_{0}, y_{0}, z_{0}\right)$ (i.e., when $\cos \theta=-1$, meaning $\theta=\pi$ ) has the smallest value. The value of the directional derivative is$$\left.\left(D_{\hat{\mathbf{u}}} f\right)\right|<em>{\left(x</em>{0}, y_{0}, z_{0}\right)}=\left|\nabla f\left(x_{0}, y_{0}, z_{0}\right)\right||\hat{\mathbf{u}}| \cos (\pi)=-\left|\nabla f\left(x_{0}, y_{0}, z_{0}\right)\right|$$</li>
+</ol>
+</blockquote>
+<p>Essential of gradient decent. That mean the place that direction live is a plain. </p>
+<blockquote>
+<ol start="5">
+<li>Any direction $\hat{\mathbf{u}}$ which is normal (perpendicular) to $\left.(\nabla f)\right|<em>{P</em>{0}}$ corresponds to zero change in $f$, i.e., a zero directional derivative, because$$\left.\left(D_{\hat{\mathbf{u}}} f\right)\right|<em>{P</em>{0}}=\left|\nabla f\left(x_{0}, y_{0}, z_{0}\right)\right||\hat{\mathbf{u}}| \cos \left(\frac{\pi}{2}\right)=0$$</li>
+</ol>
+</blockquote>
+<p>similar to above. </p>
+<p>Those property illustrate a view to directional derivative. For a point, it lives in a plain, and the value determinate by the point $cos\theta$. </p>
+<h2 id="Exercise"><a href="#Exercise" class="headerlink" title="Exercise"></a>Exercise</h2><h3 id="Find-directional-derivative"><a href="#Find-directional-derivative" class="headerlink" title="Find directional derivative"></a>Find directional derivative</h3><p>Just follow the definition. Pay attention to unit vector</p>
+<h6 id="Step"><a href="#Step" class="headerlink" title="Step"></a>Step</h6><ol>
+<li>Find partial derivative and gradient</li>
+<li>Calculate unit vector</li>
+<li>Calculate gradient in particular point</li>
+<li>Obtain solution by definition</li>
+</ol>
+<h3 id="Find-the-rapid-change"><a href="#Find-the-rapid-change" class="headerlink" title="Find the rapid change"></a>Find the rapid change</h3><p>Use the property of directional derivative.</p>
+<h6 id="Step-1"><a href="#Step-1" class="headerlink" title="Step"></a>Step</h6><ol>
+<li>Find gradient</li>
+<li>calculate the normal of gradient at point</li>
+<li>use property to find the direction of rapid increasing</li>
+<li>use property to claim the maximum change rate</li>
+<li>use property to claim rapid decreasing</li>
+</ol>
+</article><div id="paginator"></div></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/kurohomu"><i class="iconfont icon-github"></i></a><!-- Ins--><!-- RSS--><a title="rss" target="_blank" rel="noopener nofollow" href="/atom.xml"><i class="iconfont icon-rss"></i></a><!-- 知乎--><!-- 领英--><!-- 脸书--></section><p><span>Copyright ©</span><span> Kurohomu 2022</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script></body></html>
