@@ -82,19 +82,19 @@ publication_types: ["article"]
 # publication: ""
 # publication_short: ""
 
-abstract: The rapid development of high-throughput technologies has revolutionized the field of drug response prediction, with omics
-data emerging as a new paradigm. However, discovering biomarkers for all cancer types and drugs remains challenging
-due to the heterogeneity of cancer and the scarcity of labeled pharmacogenomic datasets. Additionally, omics data is
-highly noisy due to technical and biological confounders that can entangle with the desired signal. To address these
-challenges, we propose a pre-training disentangled omics representation model (DOR) for drug response prediction. DOR
-employs specialized encoders to divide samples into salient (informative) and mutual (confounding) embeddings, and
-a carefully designed reconstruction loss function to make the salient embedding capture the most critical information.
-This approach can disentangle confounders and align data from different domains in the latent space. We evaluated the
-performance of DOR on the TCGA database, consisting of 10 drugs and 5 types of omics data. DOR outperformed
-competing tree-based, linear or non-linear, and pre-training models, achieving the top rank of prediction. DOR also
-demonstrated superior domain adaptation ability when trained and tested on gender-specific subsets. Finally, the low-
-dimensional salient embeddings of DOR enabled effective multi-omics integration for improved predictions. These results
-highlight DOR’s potential for expression-based precision oncology.
+# abstract: The rapid development of high-throughput technologies has revolutionized the field of drug response prediction, with omics
+# data emerging as a new paradigm. However, discovering biomarkers for all cancer types and drugs remains challenging
+# due to the heterogeneity of cancer and the scarcity of labeled pharmacogenomic datasets. Additionally, omics data is
+# highly noisy due to technical and biological confounders that can entangle with the desired signal. To address these
+# challenges, we propose a pre-training disentangled omics representation model (DOR) for drug response prediction. DOR
+# employs specialized encoders to divide samples into salient (informative) and mutual (confounding) embeddings, and
+# a carefully designed reconstruction loss function to make the salient embedding capture the most critical information.
+# This approach can disentangle confounders and align data from different domains in the latent space. We evaluated the
+# performance of DOR on the TCGA database, consisting of 10 drugs and 5 types of omics data. DOR outperformed
+# competing tree-based, linear or non-linear, and pre-training models, achieving the top rank of prediction. DOR also
+# demonstrated superior domain adaptation ability when trained and tested on gender-specific subsets. Finally, the low-
+# dimensional salient embeddings of DOR enabled effective multi-omics integration for improved predictions. These results
+# highlight DOR’s potential for expression-based precision oncology.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
